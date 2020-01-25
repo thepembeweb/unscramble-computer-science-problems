@@ -1,7 +1,3 @@
-"""
-Read file into texts and calls.
-It's ok if you don't understand how to read files.
-"""
 import csv
 
 with open('texts.csv', 'r') as f:
@@ -24,4 +20,22 @@ Print a message:
 <list of numbers>
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
+telephone_numbers = set()
+for i in range(len(calls)):
+    telephone_numbers.add(calls[i][0])
+    try:
+        telephone_numbers.remove(calls[i][1])
+    except:
+        continue
 
+for i in range(len(texts)):
+    try:
+        telephone_numbers.remove(texts[i][0])
+    except:
+        pass
+    try:
+        telephone_numbers.remove(texts[i][1])
+    except:
+        continue
+
+print(telephone_numbers)
