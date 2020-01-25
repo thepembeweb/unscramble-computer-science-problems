@@ -9,41 +9,29 @@
 
 ## Tasks
 
-
-***************************** TASK 0: *****************************
-
-
-0. What is the first record of texts and what is the last record of calls?
+### Task0
+What is the first record of texts and what is the last record of calls?
 
 Print messages:
 "First record of texts, <incoming number> texts <answering number> at time <time>"
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 
-
-***************************** TASK 1: *****************************
-
-
-1. How many different telephone numbers are there in the records?
+### Task1
+How many different telephone numbers are there in the records?
 
 Print a message:
 "There are <count> different telephone numbers in the records."
 
-
-***************************** TASK 2: *****************************
-
-
-2. Which telephone number spent the longest time on the phone during the period? 
+### Task2
+Which telephone number spent the longest time on the phone during the period? 
 Don't forget that time spent answering a call is also time spent on the phone.
 
 Print a message:
 "<telephone number> spent the longest time, <total time> seconds, on the phone during 
 September 2016.".
 
-
-***************************** TASK 3: *****************************
-
-
-3. (080) is the area code for fixed line telephones in Bangalore.
+### Task3
+(080) is the area code for fixed line telephones in Bangalore.
 Fixed line numbers include parentheses, so Bangalore numbers
 have the form (080)xxxxxxx.)
 
@@ -72,11 +60,8 @@ Print the answer as a part of a message::
 to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 
-
-***************************** TASK 4: *****************************
-
-
-4. The telephone company want to identify numbers that might be doing
+### Task4
+The telephone company want to identify numbers that might be doing
 telephone marketing. Create a set of possible telemarketers:
 these are numbers that make outgoing calls but never send texts,
 receive texts or receive incoming calls.
@@ -85,7 +70,6 @@ Print a message:
 "These numbers could be telemarketers: "
 <list of numbers>
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
-
 
 ## Built With
 
