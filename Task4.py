@@ -1,5 +1,5 @@
 import csv
-
+from itertools import chain
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
@@ -21,10 +21,10 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
-telphone_numbers_in_texts = list(chain.from_iterable(
+telephone_numbers_in_texts = list(chain.from_iterable(
     [(sender, reciever) for sender, reciever, _ in texts]))
 
-texters = set(telphone_numbers_in_texts)
+texters = set(telephone_numbers_in_texts)
 
 callers = set()
 call_recievers = set()
